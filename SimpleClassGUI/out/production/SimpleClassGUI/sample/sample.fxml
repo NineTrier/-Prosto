@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Pane prefHeight="411.0" prefWidth="388.0" GridPane.rowIndex="1">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="171.0" layoutX="108.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Kvadrat.jpg" />
+               </image>
+            </ImageView>
+            <TextField fx:id="EditX" layoutX="108.0" layoutY="193.0" prefHeight="25.0" prefWidth="22.0" text="1" />
+            <TextField fx:id="EditY" layoutX="136.0" layoutY="193.0" prefHeight="25.0" prefWidth="22.0" text="2" />
+            <TextField fx:id="EditX1" layoutX="108.0" layoutY="44.0" prefHeight="25.0" prefWidth="22.0" text="3" />
+            <TextField fx:id="EditY1" layoutX="136.0" layoutY="44.0" prefHeight="25.0" prefWidth="22.0" text="4" />
+            <TextField fx:id="EditX2" layoutX="232.0" layoutY="44.0" prefHeight="25.0" prefWidth="22.0" text="5" />
+            <TextField fx:id="EditY2" layoutX="256.0" layoutY="44.0" prefHeight="25.0" prefWidth="22.0" text="6" />
+            <Label layoutX="115.0" layoutY="219.0" text="X" />
+            <Label layoutX="143.0" layoutY="219.0" text="Y" />
+            <Label layoutX="115.0" layoutY="27.0" text="X1" />
+            <Label layoutX="140.0" layoutY="27.0" text="Y1" />
+            <Label layoutX="236.0" layoutY="28.0" text="X2" />
+            <Label layoutX="260.0" layoutY="27.0" text="Y2" />
+            <Label layoutX="201.0" layoutY="197.0" text="Четвёртая точка найдётся сама" />
+            <TextField fx:id="EditResult" layoutX="66.0" layoutY="255.0" prefHeight="25.0" prefWidth="260.0" />
+            <Button fx:id="BtnArea" layoutX="97.0" layoutY="290.0" mnemonicParsing="false" text="Площадь" />
+            <Button fx:id="BtnPerimeter" layoutX="220.0" layoutY="290.0" mnemonicParsing="false" text="Периметр" />
+         </children>
+      </Pane>
+   </children>
+</GridPane>
